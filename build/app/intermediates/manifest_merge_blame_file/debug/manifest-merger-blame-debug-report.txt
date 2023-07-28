@@ -1,0 +1,488 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.thingsboard.pe.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.7" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:3:5-67
+14-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:4:5-79
+15-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:4:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:5:5-81
+16-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:5:22-78
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:6:5-65
+17-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:6:22-62
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:7:5-71
+18-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:7:22-68
+19    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+19-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:8:5-80
+19-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:8:22-77
+20    <uses-permission android:name="android.permission.VIDEO_CAPTURE" />
+20-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:9:5-72
+20-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:9:22-69
+21    <uses-permission android:name="android.permission.AUDIO_CAPTURE" />
+21-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:10:5-72
+21-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:10:22-69
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:11:5-81
+22-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:11:22-78
+23
+24    <queries>
+24-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:12:5-25:15
+25        <intent>
+25-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:13:9-16:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:14:13-65
+26-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:14:21-62
+27
+28            <data android:scheme="https" />
+28-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:13-44
+28-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:19-41
+29        </intent>
+30        <intent>
+30-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:17:9-20:18
+31            <action android:name="android.intent.action.DIAL" />
+31-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:18:13-65
+31-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:18:21-62
+32
+33            <data android:scheme="tel" />
+33-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:13-44
+33-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:19-41
+34        </intent>
+35        <intent>
+35-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:21:9-24:18
+36            <action android:name="android.intent.action.SEND" />
+36-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:22:13-65
+36-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:22:21-62
+37
+38            <data android:mimeType="*/*" />
+38-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:13-44
+38-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\debug\AndroidManifest.xml:26:19-41
+39        </intent>
+40        <intent>
+40-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+41            <action android:name="android.support.customtabs.action.CustomTabsService" />
+41-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-90
+41-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-87
+42        </intent>
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+45-->[:geolocator_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-77
+45-->[:geolocator_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-74
+46
+47    <permission
+47-->[androidx.core:core:1.10.1] C:\Users\zaree\.gradle\caches\transforms-3\73929061accc5e6289dfbdc6400a4304\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+48        android:name="org.thingsboard.pe.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.10.1] C:\Users\zaree\.gradle\caches\transforms-3\73929061accc5e6289dfbdc6400a4304\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.10.1] C:\Users\zaree\.gradle\caches\transforms-3\73929061accc5e6289dfbdc6400a4304\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="org.thingsboard.pe.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+51-->[androidx.core:core:1.10.1] C:\Users\zaree\.gradle\caches\transforms-3\73929061accc5e6289dfbdc6400a4304\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.10.1] C:\Users\zaree\.gradle\caches\transforms-3\73929061accc5e6289dfbdc6400a4304\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+52    <uses-feature
+52-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+53        android:name="android.hardware.camera"
+53-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+54        android:required="false" />
+54-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+55    <uses-feature
+55-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+56        android:name="android.hardware.camera.front"
+56-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+57        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+57-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+58    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+59    <uses-feature
+59-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+60        android:name="android.hardware.camera.autofocus"
+60-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+61        android:required="false" />
+61-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+62    <uses-feature
+62-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+63        android:name="android.hardware.camera.flash"
+63-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+64        android:required="false" />
+64-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+65    <uses-feature
+65-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+66        android:name="android.hardware.screen.landscape"
+66-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+67        android:required="false" />
+67-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+68    <uses-feature
+68-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+69        android:name="android.hardware.wifi"
+69-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+70        android:required="false" />
+70-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+71
+72    <application
+72-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:26:5-99:19
+73        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+73-->[androidx.core:core:1.10.1] C:\Users\zaree\.gradle\caches\transforms-3\73929061accc5e6289dfbdc6400a4304\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+74        android:debuggable="true"
+75        android:icon="@mipmap/launcher_icon"
+75-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:30:9-45
+76        android:label="ThingsBoard PE App"
+76-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:28:9-43
+77        android:networkSecurityConfig="@xml/network_security_config"
+77-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:29:9-69
+78        android:requestLegacyExternalStorage="true"
+78-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:27:9-52
+79        android:usesCleartextTraffic="true" >
+79-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\debug\AndroidManifest.xml:29:18-53
+80        <activity
+80-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:31:9-68:20
+81            android:name="org.thingsboard.pe.app.MainActivity"
+81-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:32:13-41
+82            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+82-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:36:13-163
+83            android:exported="true"
+83-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:33:13-36
+84            android:hardwareAccelerated="true"
+84-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:37:13-47
+85            android:launchMode="singleTop"
+85-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:34:13-43
+86            android:theme="@style/LaunchTheme"
+86-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:35:13-47
+87            android:windowSoftInputMode="adjustResize" >
+87-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:38:13-55
+88
+89            <!--
+90                 Specifies an Android theme to apply to this Activity as soon as
+91                 the Android process has started. This theme is visible to the user
+92                 while the Flutter UI initializes. After that, this theme continues
+93                 to determine the Window background behind the Flutter UI.
+94            -->
+95            <meta-data
+95-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:43:13-46:17
+96                android:name="io.flutter.embedding.android.NormalTheme"
+96-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:44:15-70
+97                android:resource="@style/NormalTheme" />
+97-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:45:15-52
+98            <!--
+99                 Displays an Android View that continues showing the launch screen
+100                 Drawable until Flutter paints its first frame, then this splash
+101                 screen fades out. A splash screen is useful to avoid any visual
+102                 gap between the end of Android's launch screen and the painting of
+103                 Flutter's first frame.
+104            -->
+105            <meta-data
+105-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:52:13-55:17
+106                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+106-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:53:15-79
+107                android:resource="@drawable/launch_background" />
+107-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:54:15-61
+108
+109            <intent-filter>
+109-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:56:13-59:29
+110                <action android:name="android.intent.action.MAIN" />
+110-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:57:17-68
+110-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:57:25-66
+111
+112                <category android:name="android.intent.category.LAUNCHER" />
+112-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:58:17-76
+112-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:58:27-74
+113            </intent-filter>
+114            <intent-filter>
+114-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:61:13-66:29
+115                <action android:name="android.intent.action.VIEW" />
+115-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:14:13-65
+115-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:14:21-62
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:63:17-76
+117-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:63:27-73
+118                <category android:name="android.intent.category.BROWSABLE" />
+118-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:64:17-78
+118-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:64:27-75
+119
+120                <data
+120-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:13-44
+121                    android:host="app.pe.thingsboard.org"
+122                    android:scheme="tbscheme" />
+122-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:19-41
+123            </intent-filter>
+124        </activity>
+125        <activity
+125-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:70:9-79:20
+126            android:name="org.thingsboard.pe.app.TbWebCallbackActivity"
+126-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:71:13-50
+127            android:exported="true" >
+127-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:72:13-36
+128            <intent-filter android:label="tb_web_auth" >
+128-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:73:13-78:29
+128-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:73:28-55
+129                <action android:name="android.intent.action.VIEW" />
+129-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:14:13-65
+129-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:14:21-62
+130
+131                <category android:name="android.intent.category.DEFAULT" />
+131-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:63:17-76
+131-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:63:27-73
+132                <category android:name="android.intent.category.BROWSABLE" />
+132-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:64:17-78
+132-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:64:27-75
+133
+134                <data android:scheme="org.thingsboard.pe.app.auth" />
+134-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:13-44
+134-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:15:19-41
+135            </intent-filter>
+136        </activity>
+137        <!--
+138 Don't delete the meta-data below.
+139             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+140        -->
+141        <meta-data
+141-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:83:9-86:11
+142            android:name="flutterEmbedding"
+142-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:84:13-44
+143            android:value="2" />
+143-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:85:13-30
+144        <meta-data
+144-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:87:9-88:69
+145            android:name="io.flutter.network-policy"
+145-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:87:20-60
+146            android:resource="@xml/network_security_config" />
+146-->C:\Users\zaree\flutter_thingsboard_pe_app\android\app\src\main\AndroidManifest.xml:88:20-67
+147
+148        <provider
+149            android:name="androidx.core.content.FileProvider"
+150            android:authorities="org.thingsboard.pe.app.flutter_inappwebview.fileprovider"
+151            android:exported="false"
+152            android:grantUriPermissions="true" >
+153            <meta-data
+153-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+154                android:name="android.support.FILE_PROVIDER_PATHS"
+154-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+155                android:resource="@xml/provider_paths" />
+155-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+156        </provider>
+157
+158        <service
+158-->[:geolocator_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-16:56
+159            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+159-->[:geolocator_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-77
+160            android:enabled="true"
+160-->[:geolocator_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-35
+161            android:exported="false"
+161-->[:geolocator_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+162            android:foregroundServiceType="location" />
+162-->[:geolocator_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-53
+163
+164        <activity
+164-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-20:47
+165            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+165-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-104
+166            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+166-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-137
+167            android:exported="true"
+167-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-36
+168            android:theme="@style/AppTheme" />
+168-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-44
+169        <activity
+169-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-24:55
+170            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+170-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-112
+171            android:exported="true"
+171-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+172            android:theme="@style/ThemeTransparent" />
+172-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-52
+173        <activity
+173-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-28:55
+174            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+174-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-106
+175            android:exported="true"
+175-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-36
+176            android:theme="@style/ThemeTransparent" />
+176-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-52
+177        <activity
+177-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-33:55
+178            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+178-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-126
+179            android:exported="true"
+179-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-36
+180            android:launchMode="singleInstance"
+180-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-48
+181            android:theme="@style/ThemeTransparent" />
+181-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-52
+182        <activity
+182-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-38:55
+183            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+183-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-120
+184            android:exported="true"
+184-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-36
+185            android:launchMode="singleInstance"
+185-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-48
+186            android:theme="@style/ThemeTransparent" />
+186-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-52
+187
+188        <receiver
+188-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:40
+189            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+189-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-111
+190            android:enabled="true"
+190-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-35
+191            android:exported="false" />
+191-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-37
+192
+193        <meta-data
+193-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:36
+194            android:name="io.flutter.embedded_views_preview"
+194-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-61
+195            android:value="true" />
+195-->[:flutter_inappwebview] C:\Users\zaree\flutter_thingsboard_pe_app\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-33
+196
+197        <provider
+197-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+198            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+198-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+199            android:authorities="org.thingsboard.pe.app.flutter.image_provider"
+199-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+200            android:exported="false"
+200-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+201            android:grantUriPermissions="true" >
+201-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+202            <meta-data
+202-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+203                android:name="android.support.FILE_PROVIDER_PATHS"
+203-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+204                android:resource="@xml/flutter_image_picker_file_paths" />
+204-->[:image_picker_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+205        </provider>
+206
+207        <activity
+207-->[:url_launcher_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+208            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+208-->[:url_launcher_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+209            android:exported="false"
+209-->[:url_launcher_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+210            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+210-->[:url_launcher_android] C:\Users\zaree\flutter_thingsboard_pe_app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+211        <activity
+211-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\zaree\.gradle\caches\transforms-3\a9ac40a2828984f16b72e1b76404d307\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+212            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+212-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\zaree\.gradle\caches\transforms-3\a9ac40a2828984f16b72e1b76404d307\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+213            android:exported="false"
+213-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\zaree\.gradle\caches\transforms-3\a9ac40a2828984f16b72e1b76404d307\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+214            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+214-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\zaree\.gradle\caches\transforms-3\a9ac40a2828984f16b72e1b76404d307\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+215
+216        <meta-data
+216-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\zaree\.gradle\caches\transforms-3\6b7358122594f9dcc82259a98527484e\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+217            android:name="com.google.android.gms.version"
+217-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\zaree\.gradle\caches\transforms-3\6b7358122594f9dcc82259a98527484e\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+218            android:value="@integer/google_play_services_version" />
+218-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\zaree\.gradle\caches\transforms-3\6b7358122594f9dcc82259a98527484e\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+219
+220        <provider
+220-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zaree\.gradle\caches\transforms-3\51b83a620c25f78c191136cca51915f9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+221            android:name="androidx.startup.InitializationProvider"
+221-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zaree\.gradle\caches\transforms-3\51b83a620c25f78c191136cca51915f9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+222            android:authorities="org.thingsboard.pe.app.androidx-startup"
+222-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zaree\.gradle\caches\transforms-3\51b83a620c25f78c191136cca51915f9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+223            android:exported="false" >
+223-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zaree\.gradle\caches\transforms-3\51b83a620c25f78c191136cca51915f9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+224            <meta-data
+224-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zaree\.gradle\caches\transforms-3\51b83a620c25f78c191136cca51915f9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+225                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+225-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zaree\.gradle\caches\transforms-3\51b83a620c25f78c191136cca51915f9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+226                android:value="androidx.startup" />
+226-->[androidx.emoji2:emoji2:1.0.0] C:\Users\zaree\.gradle\caches\transforms-3\51b83a620c25f78c191136cca51915f9\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+227            <meta-data
+227-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\zaree\.gradle\caches\transforms-3\1035891a238067f5272cc827e5f5486b\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+228                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+228-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\zaree\.gradle\caches\transforms-3\1035891a238067f5272cc827e5f5486b\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+229                android:value="androidx.startup" />
+229-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\zaree\.gradle\caches\transforms-3\1035891a238067f5272cc827e5f5486b\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+230            <meta-data
+230-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+231                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+231-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+232                android:value="androidx.startup" />
+232-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+233        </provider>
+234
+235        <uses-library
+235-->[androidx.window:window:1.0.0-beta04] C:\Users\zaree\.gradle\caches\transforms-3\ec9813e80025b1c0d93db6f041afe023\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+236            android:name="androidx.window.extensions"
+236-->[androidx.window:window:1.0.0-beta04] C:\Users\zaree\.gradle\caches\transforms-3\ec9813e80025b1c0d93db6f041afe023\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+237            android:required="false" />
+237-->[androidx.window:window:1.0.0-beta04] C:\Users\zaree\.gradle\caches\transforms-3\ec9813e80025b1c0d93db6f041afe023\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+238        <uses-library
+238-->[androidx.window:window:1.0.0-beta04] C:\Users\zaree\.gradle\caches\transforms-3\ec9813e80025b1c0d93db6f041afe023\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+239            android:name="androidx.window.sidecar"
+239-->[androidx.window:window:1.0.0-beta04] C:\Users\zaree\.gradle\caches\transforms-3\ec9813e80025b1c0d93db6f041afe023\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+240            android:required="false" />
+240-->[androidx.window:window:1.0.0-beta04] C:\Users\zaree\.gradle\caches\transforms-3\ec9813e80025b1c0d93db6f041afe023\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+241
+242        <receiver
+242-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+243            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+243-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+244            android:directBootAware="false"
+244-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+245            android:enabled="true"
+245-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+246            android:exported="true"
+246-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+247            android:permission="android.permission.DUMP" >
+247-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+248            <intent-filter>
+248-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+249                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+249-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+249-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+250            </intent-filter>
+251            <intent-filter>
+251-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+252                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+252-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+252-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+253            </intent-filter>
+254            <intent-filter>
+254-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+255                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+255-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+255-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+256            </intent-filter>
+257            <intent-filter>
+257-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+258                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+258-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+258-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\zaree\.gradle\caches\transforms-3\c315e91d12773d774308b12cde3e9688\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+259            </intent-filter>
+260        </receiver>
+261
+262        <activity
+262-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+263            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+263-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+264            android:clearTaskOnLaunch="true"
+264-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+265            android:screenOrientation="sensorLandscape"
+265-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+266            android:stateNotNeeded="true"
+266-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+267            android:theme="@style/zxing_CaptureTheme"
+267-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+268            android:windowSoftInputMode="stateAlwaysHidden" />
+268-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\zaree\.gradle\caches\transforms-3\6789e83dabda18c74b6ca72930b02e08\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+269    </application>
+270
+271</manifest>
