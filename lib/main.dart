@@ -13,6 +13,8 @@ import 'config/themes/tb_theme.dart';
 import 'config/themes/wl_theme_widget.dart';
 import 'generated/l10n.dart';
 
+//test
+
 final appRouter = ThingsboardAppRouter();
 
 void main() async {

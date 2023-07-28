@@ -30,49 +30,58 @@ class _PrivacyPolicyState extends TbPageState<PrivacyPolicy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
-        appBar: TbAppBar(
-          tbContext,
-          title: Text('${S.of(context).privacyPolicy}'),
-        ),
-        body: Column(children: [
+      backgroundColor: Colors.white,
+      appBar: TbAppBar(
+        tbContext,
+        title: Text('${S.of(context).privacyPolicy}'),
+      ),
+      body: Column(
+        children: [
           Expanded(
-              child: Padding(
-                  padding: EdgeInsets.all(16),
-                  child: SingleChildScrollView(
-                      child: FutureBuilder<String?>(
-                    future: privacyPolicyFuture,
-                    builder: (context, snapshot) {
-                      if (snapshot.connectionState == ConnectionState.done) {
-                        var privacyPolicy = jsonDecode(snapshot.data ?? '');
-                        dom.Document document =
-                            htmlparser.parse(privacyPolicy ?? '');
-                        return Html.fromDom(
-                          document: document,
-                          tagsList: [],
-                        );
-                      } else {
-                        return Center(
-                            child: TbProgressIndicator(
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: SingleChildScrollView(
+                child: FutureBuilder<String?>(
+                  future: privacyPolicyFuture,
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.done) {
+                      var privacyPolicy = jsonDecode(snapshot.data ?? '');
+                      dom.Document document =
+                          htmlparser.parse(privacyPolicy ?? '');
+                      return Html.fromDom(
+                        document: document,
+                      );
+                    } else {
+                      return Center(
+                        child: TbProgressIndicator(
                           tbContext,
                           size: 50.0,
-                        ));
-                      }
-                    },
-                  )))),
+                        ),
+                      );
+                    }
+                  },
+                ),
+              ),
+            ),
+          ),
           Padding(
-              padding: EdgeInsets.symmetric(horizontal: 36),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  TextButton(
-                      onPressed: () => pop(false),
-                      child: Text('${S.of(context).cancel}')),
-                  ElevatedButton(
-                      onPressed: () => pop(true),
-                      child: Text('${S.of(context).accept}'))
-                ],
-              ))
-        ]));
+            padding: EdgeInsets.symmetric(horizontal: 36),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                TextButton(
+                  onPressed: () => pop(false),
+                  child: Text('${S.of(context).cancel}'),
+                ),
+                ElevatedButton(
+                  onPressed: () => pop(true),
+                  child: Text('${S.of(context).accept}'),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
